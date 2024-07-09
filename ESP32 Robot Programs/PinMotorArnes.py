@@ -19,3 +19,26 @@ class PinMotorArnes:
             self._positionMotor += 1 # CCW
         else:
             self._positionMotor -= 1 # CW
+
+    # -------------------- SETTERS AND GETTERS ------------------------------------------------
+    @property
+    def pin_PWML(self):
+        return self._pin_PWML
+    
+    @property
+    def pin_PWMR(self):
+        return self._pin_PWMR
+    
+    @property
+    def positionMotor(self):
+        return self._positionMotor
+    @positionMotor.setter
+    def positionMotor(self, positionMotor):
+        self._positionMotor = positionMotor
+    
+    @property
+    def prevPositionMotor(self):
+        return self._prevPositionMotor
+    @prevPositionMotor.setter
+    def prevPositionMotor(self, prevPositionMotor):
+        self._prevPositionMotor = prevPositionMotor
