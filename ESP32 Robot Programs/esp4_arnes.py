@@ -98,7 +98,7 @@ if __name__ == '__main__':
     b_enviado = False # Flag to indicate to finally stop the rutine
     while(True):
         if mode == 'Distance':
-            pos_MAR = 4.25*(position_MAR* 360.0 /motorArnes.ppr) # Calculo de angulo
+            pos_MAR = 4.25*(pinMAR.positionMotor* 360.0 /motorArnes.ppr) # Calculo de angulo
             
             distance_ob = pos_MAR * CIRCU_PULLEY/360 # Distance obtain, we use it to compare with the reference
             sub = abs(distance - distance_ob)    # This is a tolerence to stop the control position
@@ -111,9 +111,9 @@ if __name__ == '__main__':
                 down_flag = True
             elif sub <= 0.5 or up_flag == False or down_flag == False: # Stop moving the pulley
                 motorArnes.stopMotor()
-                msg="Detener"
+                msg="Stop"
                 esp.send(peer_esp1,msg) # Send a message to ESP32 1 to stop moving the car
-                position_MAR = 0
+                pinMAR.positionMotor = 0
                 pos_MAR = 0
                 distance = 0   
         elif mode == 'Velocity':
