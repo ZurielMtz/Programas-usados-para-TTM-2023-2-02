@@ -1,7 +1,6 @@
-
-# Programas usados para TTM-2023/2-02
+# Programas utilizados para TTM-2023/2-02
 (Spanish)<br>
-<p style = "font-family: Verdana, font-size = 12, text-align: justify">
+<p>
 Los archivos presentados en este repositorio, fueron utilizados para el desarrollo e implementación del Trabajo Terminal (TT) de clave <strong><em>TTM-2023/2-02</em></strong> y título “<strong><em>Robot autónomo para limpiar paneles fotovoltaicos en zonas urbanas</em></strong>”. Para la implementación del TT se utilizaron tarjetas de desarrollo ESP32-WROOM de 38 y 30 pines y el lenguaje utilizado para el desarrollo de los programas fue MicroPython 2.1.22 con la versión 3.10.11 de Python; los programas fueron desarrollados y subidos por medio del software Thonny 4.1.4. <br>
 Los componentes utilizados se enlistan a continuación con las numeraciones de los productos.
   <ul>
@@ -46,7 +45,7 @@ En esta carpeta contiene los programas base para un control de posición PID de 
 </p>
 
 <h3>ESP32 Robot Porgrams</h3>
-<p style = "font-family: Arial, font-size = 12">
+<p>
 En esta carpeta contiene los programas principales de cada una de las tarjetas para mover el Sistema Mecatrónico. La manera en que se distribuyeron cada una de las tarjetas se presenta en la Figura 1 y para subir los programas de manera adecuada se basó en lo siguiente: 
   <ul>
     <li>Los archivos <strong><em>Motor.py</em></strong> y <strong><em>PinMotor.py</em></strong> son dos módulos para los motores que son controlados por medio del driver <strong>DC5-12V ZH-30A</strong> y para trabajar con los pines de la ESP32 respectiva.</li>
@@ -57,4 +56,7 @@ En esta carpeta contiene los programas principales de cada una de las tarjetas p
   </ul>
 </p>
 <img src="Sistema de informacion.png" alt="Figura 1. Comunicación de las tarjetas ESP32 en el Sistema Mecatrónico.">
-<p style="align-text: center; font-size: 8px">Figura 1. Comunicación de las tarjetas ESP32 en el Sistema Mecatrónico.</p>
+<p>Figura 1. Comunicación de las tarjetas ESP32 en el Sistema Mecatrónico.</p>
+
+# Programs used for TTM-2023/2-02
+(Enlgish)<br>
